@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004080;
+    padding: 20px;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("images/school.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.hero button:hover {
+    background: darkgreen;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+    background: #f4f4f4;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+.form-section {
+    text-align: center;
+    padding: 50px;
+}
+
+form {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 12px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+#message {
+    font-weight: bold;
+}
+
+/* STUDENT LIST */
+#studentList {
+    list-style: none;
+    padding: 20px;
+}
+
+#studentList li {
+    background: #f4f4f4;
+    width: 450px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#studentList button {
+    background: red;
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.dashboard-section {
+    text-align: center;
+    padding: 50px;
+}
+
+#searchInput {
+    padding: 12px;
+    width: 300px;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #004080;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+}
+
+button {
+    margin: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1 class="logo">Bright Future School</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="admissions.html">Admissions</a>
+    </nav>
+</header>
+
+<section class="form-section">
+    <h2>Admission Form</h2>
+
+    <form id="admissionForm">
+        <input type="text" id="name" placeholder="Full Name">
+
+        <input type="number" id="age" placeholder="Age">
+
+        <select id="class">
+            <option value="">Select Class</option>
+            <option>Primary 1</option>
+            <option>Primary 2</option>
+            <option>Primary 3</option>
+            <option>Primary 4</option>
+            <option>Primary 5</option>
+            <option>Primary 6</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+
+        <p id="message"></p>
+    </form>
+
+    <h2>Applicants List</h2>
+    <ul id="studentList"></ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1 class="logo">Bright Future School Dashboard</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+</header>
+
+<section class="dashboard-section">
+    <h2>Applicants Dashboard</h2>
+
+    <h3>Total Applicants: <span id="totalStudents">0</span></h3>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search student..."
+        onkeyup="searchStudent()"
+    >
+
+    <button onclick="clearAllStudents()">Clear All</button>
+
+    <table id="studentsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
